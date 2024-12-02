@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/images/favicon.ico"
+      type="image/x-icon" />
+    <title>Home | Quick Currency Exchange</title>
+    <link href="assets/css/index.css" rel="stylesheet"></head>
+  <style>
+    .calc {
+    padding: 20px;
+    background-color: rgba(var(--neutral-0), 0.1);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border-radius: 60px;
+    max-width: 500px !important;
+    border: 1px solid rgba(var(--neutral-0), 0.1);
+
+}
+.select__cardbox {
+    padding: 14px;
+    gap: 15px;
+    border-radius: 16px;
+    background-color: #f0f0f0;
+}
+
+.select__cardbox .thumb img {
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+}
+  </style>
+
+  <body>
+    <!-- go to top -->
+    <button class="go-to-top">
+      <i class="ph ph-arrow-up-bold"></i>
+    </button>
+
+    <!-- loader -->
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+    </div>
+
+    <!-- header -->
+    <header class="header header-two">
+      <div class="header-container ">
+        <div class="d-flex gap-2 gap-lg-3 gap-xxxl-4 justify-content-between">
+          <a href="index.html" class="d-flex align-items-center">
+            <!-- <img src="assets/images/logo.jpg" style="width: 50px;" alt="site logo" /> -->
+             <h5 class="text-white">Quick Currency Exchange</h5>
+          </a>
+
+        </div>
+        <div class="d-flex menu-dropdown-container">
+          <div class="br-right-white pe-sm-3">
+            <ul class="menu">
+              <a href="index.html" class="d-flex mb-4 d-xl-none px-2 pt-2">
+                <img src="assets/images/logo.jpg" style="width: 50px;" alt="site logo" />
+              </a>
+              <li class="dropdown-item">
+                <a class="menu-link blue " href="index.html">Home</a>
+
+              </li>
+              <li class="broker-review">
+                <a href="about.html">
+                  <button class="menu-link blue">About Us</button>
+                </a>
+
+              </li>
+
+              <li class="broker-review">
+                <a href="about.html">
+                  <button class="menu-link blue">Exchange Rates</button>
+                </a>
+
+              </li>
+              <li class="broker-review">
+                <a href="about.html">
+                  <button class="menu-link blue">Contact Us</button>
+                </a>
+
+              </li>
+            </ul>
+            <div class="menu-overlay d-xl-none"></div>
+            <button class="d-xl-none mobile-menu-btn"><i
+                class="ph ph-list"></i></button>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- hero -->
+      <section class="hero-two">
+        <div class="swiper home-two-hero-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"
+              style="background-image: url(assets/images/home-two-hero-1.png)"></div>
+            <div class="swiper-slide"
+              style="background-image: url(assets/images/home-two-hero-2.png)"></div>
+            <div class="swiper-slide"
+              style="background-image: url(assets/images/home-two-hero-3.png)"></div>
+            <div class="swiper-slide"
+              style="background-image: url(assets/images/home-two-hero-4.png)"></div>
+          </div>
+        </div>
+        <div class="banner-two-pagination"></div>
+        <div class="content">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-lg-8 col-xl-6 hero-content">
+                <br><br><br><br>
+                <h2
+                  class="text-white fw-semibold mb-3 display-3 mb-lg-4 fade_up_anim">Exchange
+                  Smarter </h2>
+                <p class="text-white mb-40 fade_up_anim"
+                  data-delay=".2">Competitive Rates & Quick Transfers</p>
+                <div class="calc">
+
+                  <div>
+                    <h4 class="text-white mb-3 p-1 text-center">BUY
+                      CURRENCY</h4>
+                    <form class="mb-4 fade_up_anim" data-delay=".4"
+                      style="max-width: 500px;">
+                      <div
+                        class="d-flex flex-column flex-sm-row align-items-sm-center w-100">
+                        <div
+                          class="pe-2 pe-md-4 d-block br-right-white transparent d-flex justify-content-center align-items-center">
+                          <img
+                            src="https://currencygenie.co.uk/RMS-WEBSITE-test/img/flag2/GBP.png"
+                            style="width: 30px; height: 30px; border-radius: 50%;"
+                            alt id="base_cur">
+                          <select name="category" id="category"
+                            class="select-clc" style="z-index: 9999;">
+                            <option>GBP</option>
+
+                          </select>
+
+                        </div>
+                        <div class="d-block ps-2 ps-md-4">
+                          <input type="text" value="1000" />
+                        </div>
+                      </div>
+                    </form>
+
+                    <form class="mb-4 fade_up_anim mt-4" data-delay=".4"
+                      style="max-width: 500px;">
+                      <div
+                        class="d-flex flex-column flex-sm-row align-items-sm-center w-100">
+                        <div
+                          class="pe-2 pe-md-4 d-block br-right-white transparent d-flex justify-content-center align-items-center">
+                          <img
+                            src="https://currencygenie.co.uk/RMS-WEBSITE-test/img/flag2/EUR.png"
+                            style="width: 30px; height: 30px; border-radius: 50%;"
+                            alt id="base_cur">
+                          <select name="category" id="category"
+                            class="select-clc" style="z-index: 9999;">
+                            <option value="EUR">EURO</option>
+                            <option value="EUR">USD</option>
+
+                          </select>
+                        </div>
+                        <div class="d-block ps-2 ps-md-4">
+                          <input type="text" value="1000" />
+                        </div>
+                      </div>
+
+                    </form>
+                  </div>
+                  <div class="d-flex align-items-center gap-3 fade_up_anim"
+                    data-delay=".6">
+                    <span class="text-secondary f-center fs-4 flex-shrink-0">
+                      <i class="ph ph-info"></i>
+                    </span>
+                    <p class="l-text fw-medium text-white">The current exchange
+                      rate is <span class="text-warning">1 GBP =
+                        1,650</span></p>
+                  </div>
+
+                  <div class="fs-3 pt-3">
+                    <a href="asset-compass.html"
+                      class="btn btn-secondary fw-semibold d-inline-flex align-items-center gap-2 fade_up_anim"
+                      data-delay=".3" bis_skin_checked="1"
+                      style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">Continue
+                      <i class="ph ph-arrow-right"></i></a>
+
+                    <a href class="text-warning"
+                      style="font-size: 13px; position: relative;  left: 20px;">I
+                      Want to Sell Currency</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- broker search tools -->
+      <section class="search-tool pt-120 pb-120">
+        <div class="container">
+          <div class="row mb-60">
+            <div class="col-md-6">
+              <h2 class="display-4 fw-semibold fade_up_anim">WHY CHOOSE Quick Currency Exchange
+                Money Exchange</h2>
+              <p class="m-text mb-40 fade_up_anim mt-2">Quick Currency Exchange Money Exchange
+                offers an exceptional blend of quality, innovation, and
+                customer-centric solutions, making it the preferred choice for
+                businesses and individuals alike. </p>
+            </div>
+
+          </div>
+          <div class="row g-3">
+            <div class="col-sm-6 col-lg-4 col-xl-3 fade_up_anim">
+              <div class="tool-box">
+                <img src="assets/images/tools/tool-1.png" class="mb-4" alt />
+                <h4 class="fw-semibold mb-3">Expertise You Can Trust</h4>
+                <p class="text-n500 s-text">Our team consists of industry
+                  professionals with years of experience, ensuring that every
+                  service we provide meets the highest standards of quality and
+                  excellence.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3 fade_up_anim"
+              data-delay=".1">
+              <div class="tool-box">
+                <img src="assets/images/tools/tool-2.png" class="mb-4" alt />
+                <h4 class="fw-semibold mb-3">Innovative Solutions</h4>
+                <p class="text-n500 s-text">We stay ahead of the curve by
+                  leveraging cutting-edge technologies and approaches to deliver
+                  creative and efficient solutions tailored to your unique
+                  needs.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3 fade_up_anim"
+              data-delay=".2">
+              <div class="tool-box">
+                <img src="assets/images/tools/tool-3.png" class="mb-4" alt />
+                <h4 class="fw-semibold mb-3">Customer-Centric Approach</h4>
+                <p class="text-n500 s-text">Your satisfaction is our top
+                  priority. We listen carefully to your requirements and work
+                  closely with you to deliver solutions that exceed your
+                  expectations.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3 fade_up_anim"
+              data-delay=".3">
+              <div class="tool-box">
+                <img src="assets/images/tools/tool-4.png" class="mb-4" alt />
+                <h4 class="fw-semibold mb-3">Proven Track Record</h4>
+                <p class="text-n500 s-text">We have a long history of successful
+                  projects and satisfied clients who continue to choose us for
+                  their ongoing needs. Our reputation speaks for itself.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- empowering investors -->
+      <section class="empowering-investors pt-120 pb-120">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 col-lg-4">
+              <img src="assets/images/empower-one.png" class="img-fluid" alt />
+            </div>
+            <div class="col-md-7 col-lg-8">
+              <h2
+                class="display-4 mb-3 mb-lg-4 text-white fw-semibold ps-md-5 ms-md-4 mt-3 fade_up_anim">Quick Currency Exchange
+                Money Exchange: Doors to the World's Exchange Rates</h2>
+              <div
+                class="d-flex gap-3 gap-xl-5 flex-column flex-lg-row align-items-start">
+                <img src="assets/images/empower-two.png" class="img-fluid"
+                  alt />
+                <div>
+                  <p class="m-text text-white mb-40 fade_up_anim"
+                    data-delay=".2">
+                    The term "Quick Currency Exchange Money Exchange," meaning "doors" in Arabic,
+                    symbolizes the many opportunities and gateways available
+                    when exchanging currencies across the globe. At www-Quick Currency Exchange
+                    Money Exchange-currency-exchange.com, we aim to simplify the
+                    currency exchange process by providing a seamless, reliable,
+                    and transparent service. Whether you’re exchanging pounds
+                    for euros or converting currencies from more exotic
+                    locations, Quick Currency Exchange Money Exchange opens the doors to the best
+                    exchange rates available.
+
+                    In the UK, with its central role in global finance, currency
+                    exchange is a vital service for both businesses and
+                    individuals alike. Quick Currency Exchange Money Exchange connects you to the
+                    international market, ensuring competitive rates and a
+                    hassle-free experience for every exchange.
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Highest rated brokers -->
+      <!-- best brokers by asset type -->
+      <section class="best-brokers pt-120 pb-120">
+        <div class="container">
+          <div class="title-section text-center">
+            <h2 class="display-4 fw-semibold mb-3 mb-lg-4 fade_up_anim">Best
+              Rates by Quick Currency Exchange Money Exchange in 2024</h2>
+            <p class="l-text mb-60 text-n500 fade_up_anim"
+              data-delay=".3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, rerum voluptates distinctio consequatur quis impedit modi veniam praesentium quo, officia eaque repellat quod nostrum optio tempora nobis, alias hic corrupti?</p>
+          </div>
+          <div
+            class="row Our_Rates justify-content-center align-items-center gap-2"
+            bis_skin_checked="1"><div class="clearfix"
+              bis_skin_checked="1"></div><div class="col-md-2"
+              bis_skin_checked="1"><div
+                class="select__cardbox boxes3 d-flex align-items-center"
+                bis_skin_checked="1"><div
+                  class="thumb transition d-flex align-items-center justify-content-center"
+                  bis_skin_checked="1"><img src="https://currencygenie.co.uk/RMS-WEBSITE-test/img/flag2/EUR.png" alt="EUR"
+                    class="img-currency"></div><a
+                  class="text-dark fw_600"><span>1.1535</span></a></div></div><div
+              class="col-md-2" bis_skin_checked="1"><div
+                class="select__cardbox boxes3 d-flex align-items-center"
+                bis_skin_checked="1"><div
+                  class="thumb transition d-flex align-items-center justify-content-center"
+                  bis_skin_checked="1"><img src="https://currencygenie.co.uk/RMS-WEBSITE-test/img/flag2/USD.png" alt="USD"
+                    class="img-currency"></div><a
+                  class="text-dark fw_600"><span>1.3687</span></a></div></div><div
+              class="col-md-2" bis_skin_checked="1"><div
+                class="select__cardbox boxes3 d-flex align-items-center"
+                bis_skin_checked="1"><div
+                  class="thumb transition d-flex align-items-center justify-content-center"
+                  bis_skin_checked="1"><img src="https://currencygenie.co.uk/RMS-WEBSITE-test/img/flag2/HKD.png" alt="HKD"
+                    class="img-currency"></div><a
+                  class="text-dark fw_600"><span>10.6288</span></a></div></div><div
+              class="col-md-2" bis_skin_checked="1"><div
+                class="select__cardbox boxes3 d-flex align-items-center"
+                bis_skin_checked="1"><div
+                  class="thumb transition d-flex align-items-center justify-content-center"
+                  bis_skin_checked="1"><img src="https://currencygenie.co.uk/RMS-WEBSITE-test/img/flag2/JPY.png" alt="JPY"
+                    class="img-currency"></div><a
+                  class="text-dark fw_600"><span>151.9237</span></a></div></div><div
+              class="clearfix" bis_skin_checked="1"></div><div class="col-md-2"
+              bis_skin_checked="1"><div
+                class="select__cardbox boxes3 d-flex align-items-center"
+                bis_skin_checked="1"><div
+                  class="thumb transition d-flex align-items-center justify-content-center"
+                  bis_skin_checked="1"><img src="https://currencygenie.co.uk/RMS-WEBSITE-test/img/flag2/CHF.png" alt="CHF"
+                    class="img-currency"></div><a
+                  class="text-dark fw_600"><span>1.2607</span></a></div></div><div
+              class="col-md-2" bis_skin_checked="1"><div
+                class="select__cardbox boxes3 d-flex align-items-center"
+                bis_skin_checked="1"><div
+                  class="thumb transition d-flex align-items-center justify-content-center"
+                  bis_skin_checked="1"><img src="https://currencygenie.co.uk/RMS-WEBSITE-test/img/flag2/ALL.png" alt="ALL"
+                    class="img-currency"></div><a
+                  class="text-dark fw_600"><span>141.6634</span></a></div></div><div
+              class="col-md-2" bis_skin_checked="1"><div
+                class="select__cardbox boxes3 d-flex align-items-center"
+                bis_skin_checked="1"><div
+                  class="thumb transition d-flex align-items-center justify-content-center"
+                  bis_skin_checked="1"><img src="https://currencygenie.co.uk/RMS-WEBSITE-test/img/flag2/AUD.png" alt="AUD"
+                    class="img-currency"></div><a
+                  class="text-dark fw_600"><span>1.8187</span></a></div></div><div
+              class="col-md-2" bis_skin_checked="1"><div
+                class="select__cardbox boxes3 d-flex align-items-center"
+                bis_skin_checked="1"><div
+                  class="thumb transition d-flex align-items-center justify-content-center"
+                  bis_skin_checked="1"><img src="https://currencygenie.co.uk/RMS-WEBSITE-test/img/flag2/EBA.png" alt="EBA"
+                    class="img-currency"></div><a
+                  class="text-dark fw_600"><span>0.9900</span></a></div></div><div
+              class="clearfix" bis_skin_checked="1"></div><div class="col-md-2"
+              bis_skin_checked="1"><div
+                class="select__cardbox boxes3 d-flex align-items-center"
+                bis_skin_checked="1"><div
+                  class="thumb transition d-flex align-items-center justify-content-center"
+                  bis_skin_checked="1"><img src="https://currencygenie.co.uk/RMS-WEBSITE-test/img/flag2/CAD.png" alt="CAD"
+                    class="img-currency"></div><a
+                  class="text-dark fw_600"><span>1.6865</span></a></div></div><div
+              class="col-md-2" bis_skin_checked="1"><div
+                class="select__cardbox boxes3 d-flex align-items-center"
+                bis_skin_checked="1"><div
+                  class="thumb transition d-flex align-items-center justify-content-center"
+                  bis_skin_checked="1"><img src="https://currencygenie.co.uk/RMS-WEBSITE-test/img/flag2/AFN.png" alt="AFN"
+                    class="img-currency"></div><a
+                  class="text-dark fw_600"><span>108.8152</span></a></div></div><div
+              class="col-md-2" bis_skin_checked="1"><div
+                class="select__cardbox boxes3 d-flex align-items-center"
+                bis_skin_checked="1"><div
+                  class="thumb transition d-flex align-items-center justify-content-center"
+                  bis_skin_checked="1"><img src="https://currencygenie.co.uk/RMS-WEBSITE-test/img/flag2/HRK.png" alt="HRK"
+                    class="img-currency"></div><a
+                  class="text-dark fw_600"><span>8.6391</span></a></div></div></div>
+        </div>
+      </section>
+
+
+      <!-- customer feedback -->
+      <section class="customer-feedback pt-120 pb-120">
+        <div class="container">
+          <div class="row g-4 align-items-center">
+            <div class="col-md-5 col-lg-6">
+              <img src="assets/images/home-two-feedback.png" alt />
+            </div>
+            <div class="col-md-7 col-lg-6 col-xl-5 offset-xl-1">
+              <h2 class="display-4 fw-semibold mb-40 fade_up_anim">Customer
+                Feedback That Makes Us Proud</h2>
+              <div class="swiper feedback-slider mb-40">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="feedback-card">
+                      <div class="content">
+                        <div
+                          class="d-flex gap-2 fs-4 text-secondary mb-3 mb-lg-4">
+                          <i class="ph ph-star-fill"></i>
+                          <i class="ph ph-star-fill"></i>
+                          <i class="ph ph-star-fill"></i>
+                          <i class="ph ph-star-fill"></i>
+                          <i class="ph ph-star-half-fill"></i>
+                        </div>
+                        <p class="l-text fw-medium mb-3 mb-lg-4">“I was
+                          skeptical about using a brokerage comparison service
+                          at first. The comparison tools are comprehensive and
+                          easy to use.”</p>
+                        <h5 class="fw-semibold mb-2">Courtney Henry</h5>
+                        <p>Project Manager</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="feedback-card">
+                      <div class="content">
+                        <div
+                          class="d-flex gap-2 fs-4 text-secondary mb-3 mb-lg-4">
+                          <i class="ph ph-star-fill"></i>
+                          <i class="ph ph-star-fill"></i>
+                          <i class="ph ph-star-fill"></i>
+                          <i class="ph ph-star-fill"></i>
+                          <i class="ph ph-star-half-fill"></i>
+                        </div>
+                        <p class="l-text fw-medium mb-3 mb-lg-4">“I was
+                          skeptical about using a brokerage comparison service
+                          at first. The comparison tools are comprehensive and
+                          easy to use.”</p>
+                        <h5 class="fw-semibold mb-2">Courtney Henry</h5>
+                        <p>Project Manager</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="feedback-card">
+                      <div class="content">
+                        <div
+                          class="d-flex gap-2 fs-4 text-secondary mb-3 mb-lg-4">
+                          <i class="ph ph-star-fill"></i>
+                          <i class="ph ph-star-fill"></i>
+                          <i class="ph ph-star-fill"></i>
+                          <i class="ph ph-star-fill"></i>
+                          <i class="ph ph-star-half-fill"></i>
+                        </div>
+                        <p class="l-text fw-medium mb-3 mb-lg-4">“I was
+                          skeptical about using a brokerage comparison service
+                          at first. The comparison tools are comprehensive and
+                          easy to use.”</p>
+                        <h5 class="fw-semibold mb-2">Courtney Henry</h5>
+                        <p>Project Manager</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex gap-4">
+                <button
+                  class="feedback-prev fs-5 f-center rounded-circle border border-secondary"><i
+                    class="ph ph-arrow-left"></i></button>
+                <button
+                  class="feedback-next fs-5 f-center rounded-circle border border-secondary"><i
+                    class="ph ph-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="footer footer-two pt-120">
+        <div class="container">
+          <div class="row g-3 pb-120">
+            <div class="col-md-6 col-lg-4 d-flex align-items-center">
+              <a href="index.html" class="d-inline-flex">
+                <img src="assets/images/logo.jpg" style="width: 50px;" alt />
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-4 d-flex align-items-center">
+              <h4 class="text-white fw-semibold text-center">Get in Touch with
+                Support Team</h4>
+            </div>
+            <div class="col-md-6 col-lg-4 d-flex justify-content-lg-end">
+              <a href="contact-us.html"
+                class="btn btn-secondary fw-semibold d-inline-flex align-items-center gap-2">Contact
+                Us <i class="ph ph-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="row g-3 pb-120">
+            <div class="col-md-6 col-xl-3 fade_up_anim" data-delay=".45">
+              <h4 class="text-white mb-3 mb-lg-4 fw-semibold">Newsletter</h4>
+              <p class="text-n30 m-text mb-32">Subscribe our newsletter to get
+                our latest update &amp; news</p>
+              <form>
+                <input type="text" placeholder="Email Address" />
+                <button>
+                  <i class="ph ph-paper-plane-right fs-4"></i>
+                </button>
+              </form>
+            </div>
+           
+            <div class="col-md-6 col-xl-3 fade_up_anim" data-delay=".15">
+              <h4 class="text-white mb-3 mb-lg-4 fw-semibold">Quick Link</h4>
+              <ul class="d-flex flex-column gap-2 text-n30">
+                <li><a class="menu-link" href="index.html">Home</a></li>
+                <li><a class="menu-link" href="about-us.html">About Us</a></li>
+                <li><a class="menu-link" href="exchange-rates.html">Exchange Rates</a></li>
+                <li><a class="menu-link" href="faqs.html">Contact Us</a></li>
+              
+              </ul>
+            </div>
+            <div class="col-md-6 col-xl-3 fade_up_anim" data-delay=".3">
+              <h4 class="text-white mb-3 mb-lg-4 fw-semibold">Legal Links</h4>
+              <ul class="d-flex flex-column gap-2 text-n30">
+             
+                <li><a class="menu-link" href="#">Privacy policy</a></li>
+                <li><a class="menu-link" href="#">Terms &amp;
+                    Conditions</a></li>
+             
+              </ul>
+            </div>
+            <div class="col-md-6 col-xl-3 fade_up_anim">
+              <h4 class="text-white mb-3 mb-lg-4 fw-semibold">Contact</h4>
+              <div class="d-flex flex-column gap-3 text-n30">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="icon-box">
+                    <i class="ph ph-phone-call"></i>
+                  </div>
+                  <p class="text-white m-text">(123) 555-5555</p>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                  <div class="icon-box">
+                    <i class="ph ph-envelope-open"></i>
+                  </div>
+                  <p class="text-white m-text">info@QuickCurrency.com</p>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                  <div class="icon-box">
+                    <i class="ph ph-map-pin"></i>
+                  </div>
+                  <p class="text-white m-text">address</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row g-3 g-md-0 copyright">
+            <div class="col-md-6">
+              <p class="m-text text-n30">Copyright © 2024 <a href="index.html"
+                  class="text-secondary">Quick Currency Exchange</a>. All rights reserved.</p>
+            </div>
+            <div class="col-md-6">
+              <ul class="social-links-two justify-content-md-end">
+                <li>
+                  <a href="#"><i class="ph ph-facebook-logo"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="ph ph-twitter-logo"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="ph ph-pinterest-logo"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="ph ph-twitch-logo"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script defer src="assets/js/app.js"></script></body>
+
+
+</html>
